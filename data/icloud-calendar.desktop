@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Kalender
+GenericName=Kalender mit iCloud-Sync
+Comment=Apple-Calendar-ähnliche Kalender-App mit iCloud-Synchronisation
+Exec=icloud-calendar
+Icon=calendar
+Terminal=false
+Categories=Office;Calendar;GTK;
+Keywords=Kalender;Calendar;iCloud;Termine;Events;
+StartupNotify=true

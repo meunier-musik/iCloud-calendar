@@ -1,0 +1,178 @@
+/* Apple-Calendar-Look für Ubuntu (GTK4 / libadwaita) */
+
+:root {
+  --accent: #ff3b30;
+}
+
+/* ---------- Grundgerüst ---------- */
+
+.calendar-window {
+  background: #ffffff;
+}
+
+.sidebar {
+  background: #f2f2f7;
+  border-right: 1px solid #e5e5ea;
+}
+
+.sidebar row {
+  background: transparent;
+  border-radius: 8px;
+  margin: 1px 6px;
+  padding: 4px 8px;
+}
+
+.sidebar row:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.sidebar row:selected {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+/* ---------- Kopfzeile ---------- */
+
+.today-button {
+  color: #ff3b30;
+  font-weight: 700;
+}
+
+.title-label {
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.view-switcher button {
+  padding: 2px 14px;
+}
+
+/* ---------- Monatsansicht ---------- */
+
+.month-grid {
+  background: #ffffff;
+}
+
+.weekday-header {
+  font-size: 11px;
+  font-weight: 600;
+  color: #8e8e93;
+  padding: 6px 0;
+}
+
+.month-cell {
+  border-top: 1px solid #e5e5ea;
+  border-right: 1px solid #e5e5ea;
+  background: #ffffff;
+  padding: 2px 4px 4px 4px;
+}
+
+.month-cell.other-month {
+  background: #f7f7fa;
+}
+
+.month-cell.other-month .day-number {
+  color: #c7c7cc;
+}
+
+.month-cell.selected {
+  background: #eef4ff;
+}
+
+.day-number {
+  font-size: 12px;
+  font-weight: 500;
+  color: #1c1c1e;
+  min-width: 22px;
+  min-height: 22px;
+  border-radius: 11px;
+}
+
+.day-number.today {
+  background: #ff3b30;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.event-pill {
+  font-size: 11px;
+  font-weight: 500;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 1px 6px;
+  margin-top: 1px;
+}
+
+.more-label {
+  font-size: 10px;
+  color: #8e8e93;
+  padding-left: 4px;
+}
+
+/* ---------- Wochen-/Tagesansicht ---------- */
+
+.week-view {
+  background: #ffffff;
+}
+
+.week-header {
+  background: #fbfbfd;
+  border-bottom: 1px solid #e5e5ea;
+}
+
+.now-line {
+  color: #ff3b30;
+}
+
+/* ---------- Jahresansicht ---------- */
+
+.year-view {
+  background: #ffffff;
+}
+
+.year-month {
+  margin: 10px;
+}
+
+/* ---------- Seitenleiste ---------- */
+
+.cal-dot {
+  min-width: 12px;
+  min-height: 12px;
+  border-radius: 6px;
+}
+
+.cal-name {
+  font-size: 13px;
+}
+
+.sidebar-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #8e8e93;
+  padding: 10px 14px 4px 14px;
+}
+
+/* ---------- Popover / Editor ---------- */
+
+.event-popover {
+  padding: 0;
+}
+
+.popover-title {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.popover-time {
+  font-size: 12px;
+  color: #8e8e93;
+}
+
+.editor-title {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.dim-label {
+  color: #8e8e93;
+}

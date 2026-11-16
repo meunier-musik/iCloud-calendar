@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "icloud-calendar"
+version = "1.0.0"
+description = "Apple-Calendar-ähnliche Kalender-App für Ubuntu mit iCloud-Sync (CalDAV)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "iCloud Calendar" }]
+dependencies = [
+    "caldav>=1.3",
+    "icalendar>=5.0",
+    "python-dateutil>=2.8",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+icloud-calendar = "icloud_calendar.main:main"
+
+[tool.setuptools.packages.find]
+include = ["icloud_calendar*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
